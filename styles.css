@@ -1,7 +1,302 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #0d1b2a;
+  background: #f7fbff;
+  line-height: 1.6;
+}
+
+.site-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  padding: 18px 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(5, 20, 35, 0.75);
+  backdrop-filter: blur(12px);
+}
+
 .logo {
   color: white;
   font-weight: 900;
   font-size: 1.3rem;
   letter-spacing: 2px;
   text-decoration: none;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 24px;
+  font-weight: 600;
+}
+
+.hero {
+  min-height: 100vh;
+  background: url("assets/images/hero-pool.jpg") center/cover no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 7%;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 20, 40, 0.35),
+    rgba(0, 20, 40, 0.15)
+  );
+}
+
+.hero-content {
+  position: relative;
+  max-width: 720px;
+  color: white;
+}
+
+.hero-buttons-only {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 260px;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 800;
+  color: #00a8e8;
+  margin-bottom: 12px;
+}
+
+h1 {
+  font-size: clamp(3.5rem, 9vw, 7.5rem);
+  line-height: 0.92;
+  margin-bottom: 24px;
+}
+
+h2 {
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  line-height: 1.05;
+  margin-bottom: 18px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 14px 24px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 800;
+  transition: 0.25s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.primary {
+  background: #00a8e8;
+  color: white;
+}
+
+.secondary {
+  background: white;
+  color: #0d1b2a;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+}
+
+.hero-buttons,
+.footer-buttons {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+section {
+  padding: 90px 7%;
+}
+
+.intro {
+  text-align: center;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.intro > p {
+  max-width: 720px;
+  margin: 0 auto 42px;
+  font-size: 1.15rem;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.stats div,
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 24px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.07);
+}
+
+.stats h3 {
+  font-size: 2rem;
+  color: #0077b6;
+}
+
+.feature {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 50px;
+  align-items: center;
+  background: #eaf7ff;
+}
+
+.feature-image {
+  min-height: 520px;
+  border-radius: 34px;
+  background: url("assets/images/featured-pool.jpg") center/cover no-repeat;
+  box-shadow: 0 25px 70px rgba(0, 0, 0, 0.16);
+}
+
+.feature-text p {
+  margin-bottom: 26px;
+  font-size: 1.1rem;
+}
+
+.services {
+  text-align: center;
+}
+
+.service-grid {
+  margin-top: 34px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.card {
+  font-size: 1.15rem;
+  font-weight: 800;
+}
+
+.gallery {
+  background: #061726;
+  color: white;
+  text-align: center;
+}
+
+.gallery-grid {
+  margin-top: 34px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 24px;
+}
+
+.estimate {
+  background: linear-gradient(135deg, #dff6ff, #ffffff);
+}
+
+.estimate-box {
+  max-width: 850px;
+  margin: auto;
+  background: white;
+  padding: 50px;
+  border-radius: 34px;
+  box-shadow: 0 25px 70px rgba(0, 0, 0, 0.1);
+}
+
+form {
+  margin-top: 28px;
+  display: grid;
+  gap: 14px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 16px;
+  border-radius: 14px;
+  border: 1px solid #d5e3ec;
+  font-size: 1rem;
+}
+
+textarea {
+  min-height: 130px;
+  resize: vertical;
+}
+
+footer {
+  padding: 80px 7%;
+  text-align: center;
+  background: #03111f;
+  color: white;
+}
+
+footer p {
+  margin-bottom: 24px;
+}
+
+.website {
+  margin-top: 28px;
+  font-weight: 700;
+}
+
+.small {
+  margin-top: 38px;
+  font-size: 0.85rem;
+  opacity: 0.7;
+}
+
+@media (max-width: 850px) {
+  nav {
+    display: none;
+  }
+
+  .stats,
+  .service-grid,
+  .gallery-grid,
+  .feature {
+    grid-template-columns: 1fr;
+  }
+
+  .feature-image {
+    min-height: 360px;
+  }
+
+  .hero-buttons-only {
+    margin-top: 220px;
+  }
+
+  .estimate-box {
+    padding: 32px;
+  }
+
+  section {
+    padding: 70px 6%;
+  }
 }
