@@ -482,22 +482,19 @@ footer p {
 
 /* MOBILE */
 @media (max-width: 950px) {
-  .desktop-nav {
-    display: none;
-  }
-
-  .site-header {
-    padding: 18px 6%;
-  }
-
   .hero {
-    min-height: auto;
-    padding: 125px 5% 65px;
+    padding: 88px 0 28px;
   }
 
   .hero-banner img {
-    width: 100%;
+    width: 100vw;
   }
+
+  .hero-buttons {
+    padding: 0 6%;
+    margin-top: 16px;
+  }
+}
 
   .stats,
   .service-grid,
