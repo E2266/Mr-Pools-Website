@@ -41,7 +41,7 @@ nav a {
 
 .hero {
   min-height: 100vh;
-  background: url("assets/images/hero-pool.jpg") center/cover no-repeat;
+  background: url("assets/images/hero-pool.png") center/cover no-repeat;
   position: relative;
   display: flex;
   align-items: center;
