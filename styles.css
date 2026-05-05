@@ -449,6 +449,65 @@ h2 {
   background: white;
 }
 
+* AREAS WE SERVE */
+.areas {
+  text-align: center;
+  background: #f7fbff;
+}
+
+.areas h2 {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.areas p {
+  max-width: 850px;
+  margin: 0 auto 18px;
+  font-size: 1.08rem;
+  color: #405466;
+}
+
+/* FAQ */
+.faq {
+  background: white;
+  text-align: center;
+}
+
+.faq h2 {
+  max-width: 850px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.faq-list {
+  max-width: 950px;
+  margin: 38px auto 0;
+  display: grid;
+  gap: 18px;
+  text-align: left;
+}
+
+.faq-item {
+  background: #f7fbff;
+  padding: 28px 30px;
+  border-radius: 24px;
+  border: 1px solid rgba(0, 140, 255, 0.1);
+  box-shadow: 0 16px 42px rgba(0, 0, 0, 0.055);
+}
+
+.faq-item h3 {
+  color: #061726;
+  font-size: 1.15rem;
+  margin-bottom: 10px;
+}
+
+.faq-item p {
+  color: #405466;
+  font-size: 1rem;
+  line-height: 1.65;
+}
+
 /* ESTIMATE */
 .estimate {
   background:
