@@ -353,13 +353,13 @@ h2 {
   position: relative;
   overflow: hidden;
   background: white;
-  padding: 34px 26px;
+  padding: 34px 28px;
   border-radius: 26px;
   box-shadow: 0 20px 55px rgba(0, 0, 0, 0.07);
   border: 1px solid rgba(0, 140, 255, 0.08);
-  font-size: 1.15rem;
-  font-weight: 900;
   transition: 0.25s ease;
+  text-align: left;
+  min-height: 210px;
 }
 
 .card::before {
@@ -371,6 +371,26 @@ h2 {
   top: -35px;
   border-radius: 999px;
   background: rgba(0, 168, 232, 0.15);
+}
+
+.card h3 {
+  position: relative;
+  z-index: 1;
+  font-size: 1.2rem;
+  line-height: 1.25;
+  font-weight: 900;
+  color: #061726;
+  margin-bottom: 12px;
+  padding-right: 34px;
+}
+
+.card p {
+  position: relative;
+  z-index: 1;
+  font-size: 0.98rem;
+  line-height: 1.65;
+  font-weight: 500;
+  color: #405466;
 }
 
 .card:hover {
@@ -590,7 +610,7 @@ footer p {
     width: 100%;
   }
 
-.gallery-item img {
-  height: 235px;
+  .gallery-item img {
+    height: 235px;
   }
 }
