@@ -624,12 +624,12 @@ footer p {
     width: 100%;
   }
 
-.stats,
-.services-grid,
-.gallery-grid,
-.feature {
-  grid-template-columns: 1fr;
-}
+  .stats,
+  .services-grid,
+  .gallery-grid,
+  .feature {
+    grid-template-columns: 1fr;
+  }
 
   .feature-image {
     min-height: 360px;
@@ -650,12 +650,35 @@ footer p {
 }
 
 @media (max-width: 520px) {
+  .logo-word {
+    font-size: 1rem;
+    letter-spacing: 2px;
+  }
+
+  .logo-mark {
+    font-size: 1.4rem;
+  }
+
+  .hero {
+    padding: 120px 5% 58px;
+  }
+
+  .hero-buttons,
+  .footer-buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
   .intro {
     padding: 58px 6% 62px;
     text-align: center;
   }
 
-   .intro h1 {
+  .intro h1 {
     font-size: 1.35rem;
     line-height: 1.25;
     max-width: 320px;
@@ -690,5 +713,31 @@ footer p {
 
   .stats h3 {
     font-size: 2rem;
+  }
+
+  .feature-image {
+    min-height: 330px;
+  }
+
+  .service-card {
+    padding: 30px 24px;
+    min-height: auto;
+  }
+
+  .gallery-item img {
+    height: 235px;
+  }
+
+  .areas p,
+  .faq-item p {
+    font-size: 1rem;
+  }
+
+  .faq-item {
+    padding: 26px 24px;
+  }
+
+  .estimate-box {
+    padding: 30px 24px;
   }
 }
