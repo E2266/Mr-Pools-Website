@@ -337,19 +337,20 @@ h2 {
 }
 
 /* SERVICES */
-.services {
+/* SERVICES */
+.services-section {
   text-align: center;
   background: #f7fbff;
 }
 
-.service-grid {
+.services-grid {
   margin-top: 36px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 22px;
 }
 
-.card {
+.service-card {
   position: relative;
   overflow: hidden;
   background: white;
@@ -362,7 +363,7 @@ h2 {
   min-height: 210px;
 }
 
-.card::before {
+.service-card::before {
   content: "";
   position: absolute;
   width: 90px;
@@ -373,7 +374,7 @@ h2 {
   background: rgba(0, 168, 232, 0.15);
 }
 
-.card h3 {
+.service-card h3 {
   position: relative;
   z-index: 1;
   font-size: 1.2rem;
@@ -384,7 +385,7 @@ h2 {
   padding-right: 34px;
 }
 
-.card p {
+.service-card p {
   position: relative;
   z-index: 1;
   font-size: 0.98rem;
@@ -393,11 +394,10 @@ h2 {
   color: #405466;
 }
 
-.card:hover {
+.service-card:hover {
   transform: translateY(-6px);
   box-shadow: 0 28px 70px rgba(0, 0, 0, 0.11);
 }
-
 /* GALLERY */
 .gallery {
   position: relative;
@@ -566,11 +566,11 @@ footer p {
   }
 
   .stats,
-  .service-grid,
-  .gallery-grid,
-  .feature {
-    grid-template-columns: 1fr;
-  }
+.services-grid,
+.gallery-grid,
+.feature {
+  grid-template-columns: 1fr;
+}
 
   .feature-image {
     min-height: 360px;
