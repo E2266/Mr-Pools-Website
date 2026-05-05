@@ -321,7 +321,7 @@ h2 {
 .feature-image {
   min-height: 520px;
   border-radius: 34px;
-  background: url("assets/images/featured-pool.jpg") center/cover no-repeat;
+  background: url("assets/images/featured-pool.jpeg") center/cover no-repeat;
   box-shadow: 0 28px 75px rgba(0, 0, 0, 0.16);
   border: 8px solid white;
 }
